@@ -1,6 +1,7 @@
 source :rubygems
 
 gem 'sinatra', '1.2.1'
+gem 'builder'
 
 group :development, :test do
 	gem 'shotgun'

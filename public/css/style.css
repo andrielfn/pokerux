@@ -24,6 +24,11 @@ body {
 	width: 990px;
 }
 
+h2 {
+	color: #B9E329;
+	margin-bottom: 15px;
+}
+
 /* ========== */
 /* = Header = */
 /* ========== */
@@ -42,7 +47,7 @@ header nav ul{
 	float: left;
 	margin-left: 20px;
 	margin-top: 22px;
-/*	border: 1px solid #F00;*/
+	/*	border: 1px solid #F00;*/
 }
 
 header nav ul li {
@@ -69,8 +74,8 @@ section#content {
 /* ========= */
 #timer {
 /*	overflow: auto;*/
-	text-align: center;
-	font-size: 300px;
+text-align: center;
+font-size: 300px;
 }
 
 .red {
@@ -82,7 +87,7 @@ section#content {
 /* ========== */
 #blinds {
 	background-color: rgba(0, 0, 0, 0.15);
-/*	width: 400px;*/
+	/*	width: 400px;*/
 	margin: 0 auto;
 	text-align: center;
 	font-size: 200px;
@@ -97,4 +102,79 @@ section#content {
 .level {
 	color: #B9E329;
 	font-size: 20px;
+}
+
+/* ========= */
+/* = Forms = */
+/* ========= */
+form#set-blinds p {
+	display: block;
+	margin: 10px 0;
+	width: 130px;
+	height: 40px;
+/*	border: 1px solid #F00;*/
+}
+
+form#set-blinds input {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	float: right;
+	box-shadow: -1px 1px 0 0px rgba(255, 255, 255, 0.1);
+	color: #FFF;
+	width: 50px;
+	border: none;
+	font-size: 20px;
+	padding: 10px 0;
+}
+
+form#set-blinds label {
+/*	border: 1px solid #F00;*/
+	position: absolute;
+/*	display: block;*/
+	padding: 12px;
+}
+
+form#set-blinds input[type="submit"], input.styled {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: -moz-linear-gradient(center top , #7FBF4D 0%, #63A62F 100%) repeat scroll 0 0 transparent;
+	border-color: #63A62F #63A62F #5B992B;
+	border-radius: 3px 3px 3px 3px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 0 #96CA6D inset;
+	color: #FFFFFF;
+	font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1;
+	padding: 7px 0 8px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #4C9021;
+	width: 80px;
+}
+
+form#set-blinds input[type="submit"]:hover, input.styled {
+    background: -moz-linear-gradient(center top , #76B347 0%, #5E9E2E 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 0 0 #8DBF67 inset;
+    cursor: pointer;
+}
+
+form#set-blinds input[type="submit"]:active, input.styled {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #5B992B #5B992B #538C27;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 0 8px 4px #548C29 inset, 0 1px 0 0 #EEEEEE;
+}
+
+input.styled {
+	width: 150px;
 }

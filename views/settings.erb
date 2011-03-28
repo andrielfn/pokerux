@@ -1,0 +1,10 @@
+<h2>Blinds</h2>
+<form action="" method="post" accept-charset="utf-8" id="set-blinds">
+	<% @number_of_blinds.times do |i| %>
+	<p>
+		<label for="blinds[]">Level <%= i + 1 %></label>
+		<input name="blinds[]" value="">
+	</p>
+	<% end %>
+	<p><input type="submit" value="Save"></p>
+</form>

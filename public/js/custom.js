@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('#timer').countdown({until: +1, compact: true, format: "MS", onTick: redOn5Seconds, onExpiry: updateData});
+	$('#timer').countdown({until: +10, compact: true, format: "MS", onTick: redOn5Seconds, onExpiry: updateData});
 });
 
 function redOn5Seconds(periods){
