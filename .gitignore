@@ -1,0 +1,6 @@
+db/*.sqlite3
+.DS_Store
+tmp
+.rubyrc
+coverage
+.bundle
