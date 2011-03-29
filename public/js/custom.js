@@ -1,33 +1,30 @@
 $(document).ready(function(){
 	
 	$(document).ready(function(){
-		if(window.location.pathname == "/settings"){
-			if (localStorage.getItem("blinds") != null) {
-				var blinds = localStorage.getItem("blinds").split(",");
-				$("#set-blinds :input[type=text]").each(function(el){
-					$(this).val(blinds[el]);
-				});
-			}else{
-				// Set blinds by default
-				var blinds = [2, 4, 10, 20, 50, 100, 200, 400, 800, 1000, 2000, 4000]
-				localStorage.setItem("blinds", blinds);
-			}
-			
-			if (localStorage.getItem("countdown") != null) {
-				countdown = parseInt(localStorage.getItem("countdown"));
-				var time = [];
-				time[0] = Math.floor(countdown / 60);
-				time[1] = countdown % 60;
-				$("#set-countdown :input[type=text]").each(function(el){
-					$(this).val(time[el]);
-				});
-				// alert(parseInt(localStorage.getItem("countdown")));
-			}else{
-				// Set countdown time per level
-				var countdown = 600; // In seconds
-				localStorage.setItem("countdown", countdown);
-			}
-			
+		if (localStorage.getItem("blinds") != null) {
+			var blinds = localStorage.getItem("blinds").split(",");
+			$("#set-blinds :input[type=text]").each(function(el){
+				$(this).val(blinds[el]);
+			});
+		}else{
+			// Set blinds by default
+			var blinds = [2, 4, 10, 20, 50, 100, 200, 400, 800, 1000, 2000, 4000]
+			localStorage.setItem("blinds", blinds);
+		}
+		
+		if (localStorage.getItem("countdown") != null) {
+			countdown = parseInt(localStorage.getItem("countdown"));
+			var time = [];
+			time[0] = Math.floor(countdown / 60);
+			time[1] = countdown % 60;
+			$("#set-countdown :input[type=text]").each(function(el){
+				$(this).val(time[el]);
+			});
+			// alert(parseInt(localStorage.getItem("countdown")));
+		}else{
+			// Set countdown time per level
+			var countdown = 600; // In seconds
+			localStorage.setItem("countdown", countdown);
 		}
 	});
 	
