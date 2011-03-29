@@ -1,10 +1,35 @@
-<h2>Blinds</h2>
+<h2>Settings</h2>
 <form action="" method="post" accept-charset="utf-8" id="set-blinds">
-	<% @number_of_blinds.times do |i| %>
-	<p>
-		<label for="blinds[]">Level <%= i + 1 %></label>
-		<input name="blinds[]" value="">
-	</p>
-	<% end %>
-	<p><input type="submit" value="Save"></p>
+	<fieldset>
+		<legend>set blinds values</legend>
+		<button type="button" style="width: 140px; margin-bottom: 20px; display: inline" id="set-default-blinds">Use default blinds</button>
+		<button type="button" style="width: 100px; margin-bottom: 20px;display: inline" id="clear-default-blinds">Clear fields</button>
+		<div class="fix">
+			<% @number_of_blinds.times do |i| %>
+			<p>
+				<label for="blinds[]">Level <%= i + 1 %></label>
+				<input type="text" name="blinds[]" value="">
+			</p>
+			<% end %>
+			
+		</div>
+		<input type="submit" value="Save" style="width: 90px">
+	</fieldset>
+</form>
+
+<form action="" method="post" accept-charset="utf-8" id="set-countdown">
+	<fieldset>
+		<legend>set countdown</legend>
+		<div class="fix">
+			<p>
+				<label for="blinds[]">Minutes</label>
+				<input type="text" name="blinds[]" value="">
+			</p>
+			<p>
+				<label for="blinds[]">Seconds</label>
+				<input type="text" name="blinds[]" value="">
+			</p>
+		</div>
+		<input type="submit" value="Save" style="width: 90px">
+	</fieldset>
 </form>

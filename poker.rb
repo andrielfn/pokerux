@@ -24,7 +24,7 @@ end
 
 get "/settings" do
 	@title = "Setting"
-	@number_of_blinds = 10;
+	@number_of_blinds = 12
 	erb :settings
 end
 
