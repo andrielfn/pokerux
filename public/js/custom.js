@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	
+$(document).ready(function(){	
 	$(document).ready(function(){
 		if (localStorage.getItem("blinds") != null) {
 			var blinds = localStorage.getItem("blinds").split(",");
@@ -94,7 +93,8 @@ function redOn5Seconds(periods){
 }
 
 function updateData(){
-	// $("#sound").html("<embed src='/buzzer.wav' hidden=true autostart=true loop=false>");
+	var buzzer = new Audio("/boom.mp3");
+	buzzer.play();
 	var blinds = localStorage.getItem("blinds").split(",");
 	var newBlindLevel = parseInt($(".level-number").html());
 	var bigBlind = blinds[newBlindLevel];
