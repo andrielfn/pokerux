@@ -59,12 +59,16 @@ header nav ul li {
 	float: left;
 }
 
-header nav ul li a{
+header nav ul li a {
 	color: #FFF;
 	background-color: rgba(42, 143, 189, 0.3);
 	padding: 8px 15px;
 	margin: 0 5px;
 	border-radius: 6px;
+}
+
+header nav ul li a:hover {
+	background-color: rgba(42, 143, 189, 0.8);
 }
 
 /* =========== */
@@ -210,4 +214,16 @@ form input[type="submit"][disabled] {
 button {
 	margin: 0;
 	padding: 3px 0;
+}
+
+.close-header {
+	position: absolute;
+	right: 40px;
+	top: 15px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFF;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
 }

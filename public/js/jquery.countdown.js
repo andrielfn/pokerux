@@ -35,10 +35,10 @@ function Countdown() {
 		timezone: null, // The timezone (hours or minutes from GMT) for the target times,
 			// or null for client local
 		serverSync: null, // A function to retrieve the current server time for synchronisation
-		format: 'dHMS', // Format for display - upper case for always, lower case only if non-zero,
+		format: 'MS', // Format for display - upper case for always, lower case only if non-zero,
 			// 'Y' years, 'O' months, 'W' weeks, 'D' days, 'H' hours, 'M' minutes, 'S' seconds
 		layout: '', // Build your own layout for the countdown
-		compact: false, // True to display in a compact format, false for an expanded one
+		compact: true, // True to display in a compact format, false for an expanded one
 		significant: 0, // The number of periods with values to show, zero for all
 		description: '', // The description displayed for the countdown
 		expiryUrl: '', // A URL to load upon expiry, replacing the current page

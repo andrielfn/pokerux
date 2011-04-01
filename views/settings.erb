@@ -2,8 +2,6 @@
 <form action="" method="post" accept-charset="utf-8" id="set-blinds">
 	<fieldset>
 		<legend>set blinds values</legend>
-		<button type="button" style="width: 140px; margin-bottom: 20px; display: inline" id="set-default-blinds">Use default blinds</button>
-		<button type="button" style="width: 100px; margin-bottom: 20px;display: inline" id="clear-default-blinds">Clear fields</button>
 		<div class="fix">
 			<% @number_of_blinds.times do |i| %>
 			<p>
@@ -17,17 +15,13 @@
 	</fieldset>
 </form>
 
-<form action="" method="post" accept-charset="utf-8" id="set-countdown">
+<form action="" method="post" accept-charset="utf-8" id="set-timer">
 	<fieldset>
 		<legend>set countdown</legend>
 		<div class="fix">
 			<p>
-				<label for="blinds[]">Minutes</label>
-				<input type="text" name="blinds[]" value="">
-			</p>
-			<p>
-				<label for="blinds[]">Seconds</label>
-				<input type="text" name="blinds[]" value="">
+				<label for="minutes">Minutes</label>
+				<input type="text" name="minutes" value="">
 			</p>
 		</div>
 		<input type="submit" value="Save" style="width: 90px">
